@@ -6,7 +6,7 @@
 </head>
 <body>
 	<h1 th:text="#{cotent.title}"></h1>
-	<h2>出力画面</h2>
+	<h2 th:text="#{cotent.output}"></h2>
 	<p th:text="'入力された値は「' + ${val} +'」です。'"></p>
 	<p><a th:href="@{/input(previous=${val})}">入力画面へ戻る</a></p> <!--/{previous}-->
 </body>

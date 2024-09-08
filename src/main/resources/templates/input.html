@@ -6,8 +6,8 @@
 </head>
 <body>
 	<h1 th:text="#{cotent.title}"></h1>
-	<h2>入力画面</h2>
-	<p>値を入力してください。</p>
+	<h2 th:text="#{cotent.input}"></h2>
+	<p th:text="#{cotent.order}"></p>
 	<!--分岐使って表示する-->
 	<p th:if="${val}" th:text="'前回入力された値は「' + ${val} + '」でした。'">th:if</p>
 	<p th:unless="${val}"></p>
